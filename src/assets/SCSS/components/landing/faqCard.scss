@@ -1,0 +1,27 @@
+.faqCard_container {
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+
+    .headContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .description {
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}

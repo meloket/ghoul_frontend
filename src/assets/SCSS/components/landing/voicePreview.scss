@@ -1,0 +1,15 @@
+.voicePreviewContainer {
+    width: 220px;
+    height: 64px;
+    box-sizing: border-box;
+    border-radius: 64px;
+    box-shadow: 0 24px 48px -12px rgb(0 0 0 / 10%);
+    pointer-events: none;
+    background-color: white;
+
+    .voicePreview {
+        width: 220px;
+        height: 64px;
+        border-radius: 64px;
+    }
+}
