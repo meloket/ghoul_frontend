@@ -2,6 +2,8 @@ import React from "react";
 import { Box } from "@material-ui/core";
 import { IoRocketOutline, IoCreateOutline } from "react-icons/io5";
 import Swiper from 'react-id-swiper';
+import SwiperCore, { Autoplay, Pagination } from 'swiper'
+import 'swiper/css';
 
 
 import "../assets/SCSS/pages/landing.scss";
@@ -20,23 +22,26 @@ import Avatar5 from "../assets/images/landing/slides/avatar_5.jpg";
 import Avatar6 from "../assets/images/landing/slides/avatar_6.jpg";
 
 import SwiperCard from "../components/landing/swiperCard";
+import ListingCard from "../components/landing/listingCard";
 
 const Landing = () => {
+  SwiperCore.use([Autoplay, Pagination]);
   const params = {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
     pagination: {
       el: '.swiper-pagination',
-      clickable: false,
+      clickable: true,
       type: 'bullets',
     },
     autoplay: {
-      delay: 1000,
+      delay: 5000,
       disableOnInteraction: false
     },
     observeParents: true,
-    observer: true
+    observer: true,
+    modules: [Autoplay, Pagination]
   }
 
   return (
@@ -66,7 +71,7 @@ const Landing = () => {
         </Box>
       </Box>
 
-      <Box className="live_auctions_area">
+      <Box className="cards_area">
         <Box className="container">
           <Box className="row">
             <Box className="col-12">
@@ -92,6 +97,85 @@ const Landing = () => {
               <Box><SwiperCard tokenURI={Auction5} roundImg={Avatar5} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
               <Box><SwiperCard tokenURI={Auction6} roundImg={Avatar6} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
             </Swiper>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box className="cards_area">
+        <Box className="container">
+          <Box className="row">
+            <Box className="col-12">
+              <Box className="auctionHeader">
+                <Box>
+                  <span>KENSHO ASSETS</span>
+                  <h3 className="mt-3 mb-0">Staking</h3>
+                </Box>
+                <Box>
+                  <Box className="contentBtn">
+                    View All
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="cardsContainer">
+            <ListingCard tokenURI={Auction1} tokenId={399} name={"Kensho NFT"} power={4533} />
+            <ListingCard tokenURI={Auction2} tokenId={399} name={"Kensho NFT"} power={4533} />
+            <ListingCard tokenURI={Auction3} tokenId={399} name={"Kensho NFT"} power={4533} />
+            <ListingCard tokenURI={Auction4} tokenId={399} name={"Kensho NFT"} power={4533} />
+            <ListingCard tokenURI={Auction5} tokenId={399} name={"Kensho NFT"} power={4533} />
+            <ListingCard tokenURI={Auction6} tokenId={399} name={"Kensho NFT"} power={4533} />
+            <ListingCard tokenURI={Auction1} tokenId={399} name={"Kensho NFT"} power={4533} />
+            <ListingCard tokenURI={Auction2} tokenId={399} name={"Kensho NFT"} power={4533} />
+          </Box>
+        </Box>
+      </Box>
+
+      <Box className="cards_area">
+        <Box className="container">
+          <Box className="row">
+            <Box className="col-12">
+              <Box className="auctionHeader">
+                <Box>
+                  <span>How it works</span>
+                  <h3 className="mt-3 mb-0">Create and sell your NFT</h3>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="cardsContainer">
+            <Box className="guideCard">
+              <Box className="iconBox wallet">
+              </Box>
+              <Box className="title">Connect your wallet</Box>
+              <Box className="content">
+                Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the NFT Marketplace in the top right corner. Learn about the wallets we support.
+              </Box>
+            </Box>
+            <Box className="guideCard">
+              <Box className="iconBox cells">
+              </Box>
+              <Box className="title">Select your Kenshos</Box>
+              <Box className="content">
+                Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the NFT Marketplace in the top right corner. Learn about the wallets we support.
+              </Box>
+            </Box>
+            <Box className="guideCard">
+              <Box className="iconBox envelop">
+              </Box>
+              <Box className="title">Wait for confirmation</Box>
+              <Box className="content">
+                Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the NFT Marketplace in the top right corner. Learn about the wallets we support.
+              </Box>
+            </Box>
+            <Box className="guideCard">
+              <Box className="iconBox bag">
+              </Box>
+              <Box className="title">Earn $NFTC</Box>
+              <Box className="content">
+                Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the NFT Marketplace in the top right corner. Learn about the wallets we support.
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Box>

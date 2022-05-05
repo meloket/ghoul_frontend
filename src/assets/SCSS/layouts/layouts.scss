@@ -9,6 +9,16 @@
     src: url("../../fonts/fontawesome/webfonts/fa-solid-900.ttf");
 }
 
+@font-face {
+    font-family: "fontAwesomeBrands";
+    src: url("../../fonts/fontawesome/webfonts/fa-brands-400.ttf");
+}
+
+@font-face {
+    font-family: "fontAwesomeRegular";
+    src: url("../../fonts/fontawesome/webfonts/fa-regular-400.ttf");
+}
+
 .btn_bordered_white {
     position: relative;
     border: 2px solid #fff;
@@ -24,6 +34,7 @@
     font-weight: 700;
     color: #f9f9f9;
     z-index: 2;
+    width: max-content;
 
     &::after {
         position: absolute;
@@ -48,4 +59,8 @@
         border-color: transparent;
         box-shadow: 10px 25px rgb(0 0 0 / 10%);
     }
+}
+
+.btn_bordered_white.small {
+    padding: 12px 18px;
 }
