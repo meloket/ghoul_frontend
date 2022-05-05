@@ -1,10 +1,44 @@
 import React from "react";
 import { Box } from "@material-ui/core";
-import {IoRocketOutline, IoCreateOutline} from "react-icons/io5";
+import { IoRocketOutline, IoCreateOutline } from "react-icons/io5";
+import Swiper from 'react-id-swiper';
+
 
 import "../assets/SCSS/pages/landing.scss";
 
+import Auction1 from "../assets/images/landing/slides/auction_1.jpg";
+import Auction2 from "../assets/images/landing/slides/auction_2.jpg";
+import Auction3 from "../assets/images/landing/slides/auction_3.jpg";
+import Auction4 from "../assets/images/landing/slides/auction_4.jpg";
+import Auction5 from "../assets/images/landing/slides/auction_5.jpg";
+import Auction6 from "../assets/images/landing/slides/auction_6.jpg";
+import Avatar1 from "../assets/images/landing/slides/avatar_1.jpg";
+import Avatar2 from "../assets/images/landing/slides/avatar_2.jpg";
+import Avatar3 from "../assets/images/landing/slides/avatar_3.jpg";
+import Avatar4 from "../assets/images/landing/slides/avatar_4.jpg";
+import Avatar5 from "../assets/images/landing/slides/avatar_5.jpg";
+import Avatar6 from "../assets/images/landing/slides/avatar_6.jpg";
+
+import SwiperCard from "../components/landing/swiperCard";
+
 const Landing = () => {
+  const params = {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: false,
+      type: 'bullets',
+    },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    observeParents: true,
+    observer: true
+  }
+
   return (
     <Box className={"landing_container"}>
       <Box className="heroSection">
@@ -48,6 +82,16 @@ const Landing = () => {
                 </Box>
               </Box>
             </Box>
+          </Box>
+          <Box className="slidesContainer">
+            <Swiper {...params}>
+              <Box><SwiperCard tokenURI={Auction1} roundImg={Avatar1} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
+              <Box><SwiperCard tokenURI={Auction2} roundImg={Avatar2} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
+              <Box><SwiperCard tokenURI={Auction3} roundImg={Avatar3} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
+              <Box><SwiperCard tokenURI={Auction4} roundImg={Avatar4} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
+              <Box><SwiperCard tokenURI={Auction5} roundImg={Avatar5} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
+              <Box><SwiperCard tokenURI={Auction6} roundImg={Avatar6} tokenId={399} name={"Kensho NFT"} power={4533} /></Box>
+            </Swiper>
           </Box>
         </Box>
       </Box>
