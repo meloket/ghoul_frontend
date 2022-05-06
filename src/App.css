@@ -52,3 +52,7 @@ a {
 img {
   all: unset;
 }
+
+input {
+  all: unset;
+}

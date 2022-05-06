@@ -1,7 +1,119 @@
 .footer_container {
     width: 100%;
     box-sizing: border-box;
-    
+    background-color: #121117;
+    color: #e1e1e1;
 
-    
+    .container {
+        width: 100%;
+        max-width: 1170px;
+
+        .top {
+            padding: 100px 0px;
+
+            .logoImg {
+                width: 43px;
+                height: 52px;
+                cursor: pointer;
+            }
+
+            .content {
+                padding: 20px 0px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+
+            .socialIcons {
+                display: flex;
+                column-gap: 10px;
+
+                .iconBox {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 3px;
+                    background-color: #222;
+                    color: #f9f9f9;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 18px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+            }
+
+            .title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 1.2;
+                color: #f9f9f9;
+                margin-bottom: 20px;
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                row-gap: 18px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+
+                div {
+                    cursor: pointer;
+                }
+            }
+
+            .subscribeBox {
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                background-color: #191919;
+                padding: 6px 66px 6px 20px;
+                color: #e1e1e1;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .emailInput {
+                    width: 100%;
+                    color: #e1e1e1;
+                    font-size: 16px;
+
+                    &::placeholder {
+                        opacity: .7;
+                    }
+                }
+
+                .submitBtn {
+                    width: 66px;
+                    height: 50px;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    border-radius: 100px 0px 0px 100px;
+                    color: #f9f9f9;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 700;
+                    font-size: 16px;
+                    background-image: linear-gradient(150deg, #57048a 0%, #4528dc 78%);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .bottom {
+            border-top: 1px solid rgba(255, 255, 255, .12);
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            color: #e1e1e1;
+            font-size: 18px;
+        }
+    }
 }
