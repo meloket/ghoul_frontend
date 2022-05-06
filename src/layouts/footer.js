@@ -56,7 +56,7 @@ const Footer = () => {
                 </Box>
                 <Box className="bottom">
                     <Box>©2022 NetStorm, All Rights Reserved.</Box>
-                    <Box>Made with<FaHeart/>By Themeland</Box>
+                    {/* <Box>Made with<FaHeart/>By NFT Club</Box> */}
                 </Box>
             </Box>
         </Box>
