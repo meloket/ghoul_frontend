@@ -19,7 +19,7 @@ const NFTData = [
         name: "Kensho",
         power: 216.1686,
         isStaked: false,
-        xp: 336,
+        xp: 1012,
         xpMax: 1012,
     },
     {
@@ -29,7 +29,7 @@ const NFTData = [
         name: "Kensho",
         power: 216.1686,
         isStaked: true,
-        xp: 336,
+        xp: 636,
         xpMax: 1012,
     },
     {
@@ -59,7 +59,7 @@ const NFTData = [
         name: "Kensho",
         power: 216.1686,
         isStaked: false,
-        xp: 336,
+        xp: 104,
         xpMax: 1012,
     },
     {
@@ -79,7 +79,7 @@ const NFTData = [
         name: "Kensho",
         power: 216.1686,
         isStaked: false,
-        xp: 336,
+        xp: 220,
         xpMax: 1012,
     },
     {

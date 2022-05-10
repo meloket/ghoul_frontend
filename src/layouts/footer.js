@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@material-ui/core";
-import { FaFacebookF, FaTwitter, FaGooglePlusG, FaVine, FaPaperPlane, FaHeart } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaGooglePlusG, FaVine, FaPaperPlane } from "react-icons/fa";
 // import { Link } from "react-router-dom";
 
 import "../assets/SCSS/layouts/footer.scss";

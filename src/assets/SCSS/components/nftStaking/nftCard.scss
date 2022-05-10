@@ -84,5 +84,14 @@
             font-weight: 600;
             color: #f5f5ff;
         }
+
+        .xpBar {
+            width: 100%;
+            height: 8px;
+            border-radius: 3px;
+            border: 1px solid blue;
+            overflow: hidden;
+        }
+
     }
 }

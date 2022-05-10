@@ -8,7 +8,6 @@ import { NFTData } from "../constants/nftData";
 import "../assets/SCSS/pages/nftStaking.scss";
 import NFTCard from "../components/nftStaking/nftCard";
 
-import nft1 from "../assets/images/nftStaking/nfts/nft1.jpg";
 
 const NFTStaking = () => {
 

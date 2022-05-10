@@ -1,11 +1,13 @@
 import React from "react";
 import { Box } from "@material-ui/core";
+import styled from "styled-components";
 
 import "../../assets/SCSS/components/nftStaking/nftCard.scss";
 
 
 
 const NFTCard = ({tokenURI, tokenId, name, power, level, isStaked, xp, xpMax}) => {
+    const percantage = xp * 100 / xpMax;
 
 
     return (
@@ -35,10 +37,21 @@ const NFTCard = ({tokenURI, tokenId, name, power, level, isStaked, xp, xpMax}) =
                     <Box className="xpvalue">XP</Box>
                     <Box className="xpvalue">{xp} of {xpMax}</Box>
                 </Box>
+                <Box className="xpBar mt-1">
+                    <XpBarContent percantage = {percantage}></XpBarContent>
+                </Box>
 
             </Box>
         </Box>
     );
 };
+
+const XpBarContent = styled.div`
+    width: ${props => props.percantage + "%"};
+    height: 100%;
+    background-color: blue;
+    border-radius: 3px;
+    transition: .2s;
+`
 
 export default NFTCard;
