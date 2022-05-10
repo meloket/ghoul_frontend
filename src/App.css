@@ -1,5 +1,6 @@
 body {
   color: #1d354f;
+  background-color: rgb(9, 8, 13);
 }
 
 *{
@@ -46,7 +47,8 @@ body {
 }
 
 a {
-  all: unset;
+  all: unset !important;
+  cursor: pointer !important;
 }
 
 img {

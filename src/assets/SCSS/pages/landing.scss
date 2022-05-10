@@ -85,6 +85,9 @@
         .container {
             margin: auto;
             max-width: 1170px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
 
             .auctionHeader {
                 display: flex;

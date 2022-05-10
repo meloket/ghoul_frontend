@@ -4,6 +4,16 @@
     position: relative;
 }
 
+.justify_content_center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify_content_space_between {
+    display: flex;
+    justify-content: space-between;
+}
+
 @font-face {
     font-family: "fontAwesome";
     src: url("../../fonts/fontawesome/webfonts/fa-solid-900.ttf");
@@ -59,6 +69,20 @@
         border-color: transparent;
         box-shadow: 10px 25px rgb(0 0 0 / 10%);
     }
+}
+
+.btn_bordered_white.red {
+    border: 2px solid red;
+}
+
+
+
+.btn_bordered_white.green {
+    border: 2px solid green;
+}
+
+.btn_bordered_white.blue {
+    border: 2px solid blue;
 }
 
 .btn_bordered_white.small {

@@ -3,7 +3,7 @@ import { Box } from "@material-ui/core";
 import { IoIosArrowDown } from "react-icons/io";
 import {FaSearch} from "react-icons/fa";
 import {BsWallet2} from "react-icons/bs";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../assets/SCSS/layouts/navbar.scss";
 
@@ -22,7 +22,9 @@ const Navbar = () => {
             Explore
             <IoIosArrowDown />
             <Box className="menu">
-              <Box className="menu_item">Explore Style 1</Box>
+              <Link to={"/nftStaking"}>
+                <Box className="menu_item">NFT Staking</Box>
+              </Link>
               <Box className="menu_item">Explore Style 2</Box>
               <Box className="menu_item">Explore Style 3</Box>
               <Box className="menu_item">Explore Style 4</Box>
